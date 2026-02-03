@@ -1,0 +1,4 @@
+order_id,product,category,price,quantity,customer_id,date
+202,Mouse,Electronics,600,2,2,2025-05-02   # duplicate of file1 row
+204,Monitor,Electronics,12500,1,4,2025-05-04
+205,Book,Stationery,250,3,5,2025-05-05

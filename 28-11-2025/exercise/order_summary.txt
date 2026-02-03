@@ -1,0 +1,23 @@
+
+--------------------------------
+        ORDER SUMMARY
+--------------------------------
+
+    PRODUCT NAME: BREAD
+    QUANTITY: 23
+    PRICE: 12.0
+    TOTAL: 276.0
+    ----------------------------------
+    
+    PRODUCT NAME: JAM
+    QUANTITY: 12
+    PRICE: 2.0
+    TOTAL: 24.0
+    ----------------------------------
+    
+    PRODUCT NAME: PEANUT
+    QUANTITY: 12
+    PRICE: 20.0
+    TOTAL: 240.0
+    ----------------------------------
+    TOTAL SUM: 540.0

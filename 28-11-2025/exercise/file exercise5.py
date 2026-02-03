@@ -1,0 +1,5 @@
+f=open("notes.txt","r")
+lines=f.read()
+count=lines.split()
+print(count)
+print("Number of words:",len(count))

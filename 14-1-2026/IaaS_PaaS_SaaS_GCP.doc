@@ -1,0 +1,142 @@
+﻿<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>GCP Cloud Services</title></head><body>
+    <h1>Cloud Service Models in Google Cloud Platform</h1>
+    
+    <button class="download-btn" onclick="downloadAsWord()">📥 Download as Word Document</button>
+    
+    <h2>1. Infrastructure as a Service (IaaS)</h2>
+    
+    <p>Infrastructure as a Service (IaaS) provides virtualized computing resources over the internet. In Google Cloud Platform (GCP), this means you manage the infrastructure (VMs, storage, networking) while Google handles the physical hardware.</p>
+    
+    <h3>Key GCP IaaS Services</h3>
+    
+    <ul>
+        <li><strong>Compute Engine</strong>
+            <ul>
+                <li>Virtual Machines (VMs) with customizable CPU, memory, and storage</li>
+                <li>Predefined machine types or custom configurations</li>
+            </ul>
+        </li>
+        <li><strong>Persistent Disk</strong>
+            <ul>
+                <li>Block storage for VMs</li>
+            </ul>
+        </li>
+        <li><strong>Cloud Storage</strong>
+            <ul>
+                <li>Object storage for unstructured data</li>
+            </ul>
+        </li>
+        <li><strong>Virtual Private Cloud (VPC)</strong>
+            <ul>
+                <li>Networking services for secure communication</li>
+            </ul>
+        </li>
+        <li><strong>Cloud Load Balancing</strong>
+            <ul>
+                <li>Distributes traffic across multiple instances</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <div class="use-case">
+        <strong>Use Case:</strong> Hosting applications, running custom workloads, lift-and-shift migrations
+    </div>
+    
+    <h2>2. Platform as a Service (PaaS)</h2>
+    
+    <p>Platform as a Service (PaaS) abstracts infrastructure and provides a platform for building, deploying, and managing applications without worrying about servers.</p>
+    
+    <h3>Key GCP PaaS Services</h3>
+    
+    <ul>
+        <li><strong>App Engine</strong>
+            <ul>
+                <li>Fully managed platform for web and mobile apps</li>
+                <li>Supports multiple languages (Java, Python, Go, Node.js)</li>
+            </ul>
+        </li>
+        <li><strong>Cloud Functions</strong>
+            <ul>
+                <li>Serverless compute for event-driven applications</li>
+            </ul>
+        </li>
+        <li><strong>Cloud Run</strong>
+            <ul>
+                <li>Deploy containerized applications without managing servers</li>
+            </ul>
+        </li>
+        <li><strong>Firebase</strong>
+            <ul>
+                <li>Backend services for mobile/web apps (authentication, database, hosting)</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <div class="use-case">
+        <strong>Use Case:</strong> Rapid application development, microservices, serverless apps
+    </div>
+    
+    <h2>3. Software as a Service (SaaS)</h2>
+    
+    <p>Software as a Service (SaaS) delivers ready-to-use applications over the internet. GCP offers SaaS solutions for productivity, analytics, and AI.</p>
+    
+    <h3>Key GCP SaaS Services</h3>
+    
+    <ul>
+        <li><strong>Google Workspace</strong>
+            <ul>
+                <li>Gmail, Docs, Sheets, Drive for collaboration</li>
+            </ul>
+        </li>
+        <li><strong>BigQuery</strong>
+            <ul>
+                <li>Fully managed data warehouse for analytics</li>
+            </ul>
+        </li>
+        <li><strong>Looker</strong>
+            <ul>
+                <li>Business intelligence and data visualization</li>
+            </ul>
+        </li>
+        <li><strong>Google Maps Platform</strong>
+            <ul>
+                <li>Location-based services and APIs</li>
+            </ul>
+        </li>
+        <li><strong>AI/ML APIs</strong>
+            <ul>
+                <li>Vision API, Speech-to-Text, Translation API</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <div class="use-case">
+        <strong>Use Case:</strong> Business productivity, data analytics, AI-powered applications
+    </div>
+
+    <script>
+        function downloadAsWord() {
+            const header = "<html xmlns:o='urn:schemas-microsoft-com:office:office' " +
+                "xmlns:w='urn:schemas-microsoft-com:office:word' " +
+                "xmlns='http://www.w3.org/TR/REC-html40'>" +
+                "<head><meta charset='utf-8'><title>GCP Cloud Services</title></head><body>";
+            const footer = "</body></html>";
+            
+            const sourceHTML = header + document.body.innerHTML + footer;
+            
+            const blob = new Blob(['\ufeff', sourceHTML], {
+                type: 'application/msword'
+            });
+            
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'IaaS_PaaS_SaaS_GCP.doc';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+    </script>
+
+</body></html>

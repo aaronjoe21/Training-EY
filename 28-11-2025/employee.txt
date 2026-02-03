@@ -1,0 +1,5 @@
+
+    Employee Record
+    ID: 101
+    Name: Rahul
+    Salary: 20000

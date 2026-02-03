@@ -1,0 +1,36 @@
+{
+  "customers": [
+    {
+      "customer_id": 1,
+      "name": "Aisha",
+      "details": {
+        "city": "Delhi",
+        "age": 28
+      }
+    },
+    {
+      "customer_id": 2,
+      "name": "Rahul",
+      "details": {
+        "city": "Mumbai",
+        "age": 32
+      }
+    },
+    {
+      "customer_id": 3,
+      "name": "Meera",
+      "details": {
+        "city": "Chennai",
+        "age": 25
+      }
+    },
+    {
+      "customer_id": 4,
+      "name": "Sanjay",
+      "details": {
+        "city": "Bangalore",
+        "age": 30
+      }
+    }
+  ]
+}
